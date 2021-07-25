@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>The Rambling Club</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    
+    
+    <script>
+        $(document).ready(function() {
+
+            $('.faq_question').click(function() {
+
+                if ($(this).parent().is('.open')) {
+                    $(this).closest('.faq').find('.faq_answer_container').slideUp();
+                    $(this).closest('.faq').removeClass('open');
+                } else {
+                    $('.faq_answer_container').slideUp();
+                    $('.faq').removeClass('open');
+                    $(this).closest('.faq').find('.faq_answer_container').slideDown();
+                    $(this).closest('.faq').addClass('open');
+                }
+
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <header id="banner">
+
+        <div id="acheader">
+            <form id="acnewsearch" method="get" action="http://wwww.google.com">
+                <input type="text" id="acq2b" class="actextinput2" name="q" size="21"
+                maxlength="120" value="search..."><input type="submit" value="Go"
+                class="acbutton2">
+            </form>
+            <div class="acclear"></div>
+        </div>
+
+     <label class="logo">Rambling cluB</label>
+
+
+
+        <div class="navbar">
+            <a href="HomePage.html"><i class="fa fa-fw fa-Home Page"></i>Home Page</a>
+            <a href="Blog.html"><i class="fa fa-fw fa-Blog"></i>Blog</a>
+            <a href="Register.html"><i class="fa fa-fw fa-Register"></i>Register</a>
+            <a href="AboutUs.html"><i class="fa fa-fw fa-About"></i>About Us</a>
+            <a href="Q&A.html"><i class="fa fa-fw fa-Q&A"></i>Q&A</a>
+            <a href="BookOnline.html"><i class="fa fa-fw fa-Book Online"></i>Book Online</a>
+            <a href="CurrentProgramme.html"><i class="fa fa-fw fa-Current Programme"></i>Current Programme</a>
+            <a href="Contact.html"> <button type="button">Contact Us</button></a>
+
+        </div>
+    </header><br>
+
+
+<h1>FAQ</h1>
+
+<button class="accordion">Do i need to be a member to walk?</button>
+<div class="panel">
+  <p>Everyone is welcome to join us on a few walks,
+    atleast two walks is enough for you to decide if you would like to join the club</p>
+</div>
+
+<button class="accordion">What type of experience do i need?</button>
+<div class="panel">
+  <p>Check the book online page to get a brief descripton about the grades of walk
+    and to find the walk that is suitable for.</p>
+</div>
+
+<button class="accordion">What if i am above 50?</button>
+<div class="panel">
+  <p>Everyone is welcome on our walks, we always want to see older people walk so we'd
+    love to see you! So quickly hit the join button and register with us.</p>
+</div>
+
+<button class="accordion">How long is the walk? </button>
+<div class="panel">
+  <p>The lenght of the walk depends on the grade of the walk,
+    grade 'A' walk could last about 4km, grade 'B' could last about 22km and finally grade 'C'
+    could last about 41km of walk </p>
+</div>
+
+<button class="accordion">Do I have to book up to go on a walk? </button>
+<div class="panel">
+  <p> If you are not yet a member you do not have to worry about booking online, you just need 
+    to get more information on the website and show up for our next  walk. 
+    if you are already a member, you just need to turn up at the 
+    designated meeting point.</p>
+</div>
+
+<button class="accordion">What type of clothes do I need to wear?</button>
+<div class="panel">
+  <p>You can wear any comfortable clothes and please dress according to the 
+    weather. </p>
+</div>
+
+<button class="accordion"> What time does a walk end?</button>
+<div class="panel">
+  <p>The duration of walks depends on the grade of walk, lenght, weather and 
+    difficulty of the walk, check the book online page for more info. </p>
+</div>
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+</script>
+    
+
+        
+    <br><br> <br><br>
+
+    <a href="register.html"><button type="button">Join</button></a>
+    <br><br><BR>
+
+        <footer>
+            <h6>Find us on</h6>
+                     <a href="https://m.facebook.com/ramblers" class="fa fa-facebook"></a>
+                     <a href="https://mobile.twitter.com/ramblersgb" class="fa fa-twitter"></a>
+                     <a href="https://www.instagram.com/ramblersgb" class="fa fa-instagram"></a>
+                <br><br>
+                Ramblers Charity Accra,Ghana No:107456 ©Ramblers 2020
+        </footer>
+
+
+</body>
+</html>

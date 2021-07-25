@@ -1,0 +1,314 @@
+*{
+    box-sizing: border-box;
+}
+
+.column{
+    background-color:olive;
+    float: left;
+    width: 40%;
+    margin-left: 5%;
+    padding: 10px;
+    height: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+div{
+    column-gap: 40px;
+}
+
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header#banner{
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    background-image: url("r37.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+label.logo{
+    color: mintcream;
+    font-weight:  bold;
+    font-size: 45px;
+    display: contents;
+
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(33, 47, 61);
+    background-image: url("r2.jpeg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.navbar a:hover{
+    color:rgb(9, 195, 252);
+}
+
+
+footer{
+    width: 100%;
+    margin-top: auto;
+    height: 13%;
+    text-align: center;
+    background-color: rgb(23, 32, 42);
+    font-size: 18px;
+    color: white;
+}
+footer ul{
+    margin: 0px; 
+    padding: 0px;
+    list-style-type: none;
+}
+footer li a{
+    font-size: 15px;
+    color: white;
+    display: block;
+    text-decoration: none;
+
+}
+footer li a:hover{
+    color: rgb(15, 178, 228);  
+}
+
+button{
+    padding: 6px 23px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: greenyellow;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    border-radius: 50px;
+    color: rgb(23, 32, 42);
+}
+
+button:hover{
+    background-color: rgb(9, 195, 252);
+    color:white;
+}
+.image{
+    cursor: pointer;
+    width: 100%;
+    height: 350px;
+    background-size: contain;
+}
+.img{
+    cursor: pointer;
+    width: 3%;
+    height: 20px;
+}
+
+.mob{
+    cursor: pointer;
+    width: 48%;
+    height: 170px;
+}
+h6{
+    font-size: 18px;
+}
+video{
+    width: 100%;
+    height: 350px;
+}
+
+
+header#header_article_1{
+    text-align: center;
+    color: greenyellow;
+    font-size: 16px;
+}
+header#header_article_2{
+    text-align: center;
+    color:greenyellow;
+    font-size: 16px;
+
+}
+header#header_article_3{
+    text-align: center;
+    color: greenyellow;
+    font-size: 20px;
+
+}
+header#header_article_4{
+    text-align: center;
+    color: greenyellow;
+    font-size: 22px;
+
+}
+header#header_article_5{
+    text-align: center;
+    color:greenyellow;
+    font-size: 25px;
+}
+
+.navbar{
+    width: 100%;
+    background-color:rgb(23, 32, 42);
+    overflow: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.navbar a {
+    text-align: center;
+    padding: 0px 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width:500px) {
+    .navbar a{
+        float: none;
+        display: block;
+    }
+}
+@media (max-width:500px) {
+    .column{
+        width: 100%;
+    }
+}
+
+
+#acnewsearch{
+    float: right;
+    padding: 20px;
+}
+
+.actextinput2{
+    margin: 0;
+    padding: 5px 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    color: black;
+    border: 1px solid #0076a3;
+    border-right: 0px;
+    border-top-right-radius: 5px 5px;
+    border-bottom-right-radius: 5px 5px;
+}
+.acbutton2:hover{
+    text-decoration: none;
+    background: greenyellow;
+
+}
+
+.acclear{
+    clear: both;
+}
+
+
+.forms{
+    padding: 15px;
+    background-color: wheat;
+    color: rgb(20, 23, 70);
+}
+th{
+    color: red;
+    font-size: 18px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    background-color: wheat;
+}
+td{
+background-color: mintcream;
+color: saddlebrown;
+}
+
+.show{
+    color: gold;
+    text-decoration: none ;
+}
+.show:hover{color: maroon;
+}
+
+
+.fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      color: olive;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: #c1356f;
+    color:white;
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+      
+  .faq_question {
+    margin: 0px;
+    padding: 0px 0px 5px 0px;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq_answer_container {
+    display: none;
+}
+
+iframe{
+    width: 100%;
+    height: 350px;
+}
+
+
+
+.accordion {
+    background-color: wheat;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(64, 183, 219); 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color:OLIVE;
+    overflow: hidden;
+  }
